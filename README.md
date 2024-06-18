@@ -1,4 +1,5 @@
-## XFeat: Accelerated Features for Lightweight Image Matching
+## XFeat-ONNX: ONNX Accelerated Features for Lightweight Image Matching
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
 ## Citation
 Project taken from: [XFeat](https://github.com/verlab/accelerated_features/tree/main)
