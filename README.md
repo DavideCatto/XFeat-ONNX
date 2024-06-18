@@ -30,6 +30,9 @@ For this reason the code differ from the original project: batch operations have
 ### Multiscale
 - Actually Dense Multiscale model is not supported. Possible Future Work!
 
+### Keypoints location
+- To compare the Pytorch/Onnx/C++ models, the images in the assets folder were used. It can be seen in the results that the Python Pytorch/ONNX results are very similar to each other. For the C++ part, the results may vary slightly, particularly with a noticeable upward sliding of points compared to the Python versions. However, when using the images without applying padding (image_800x608), the sliding does not occur. Could some scaling/rounding factor be getting lost somewhere?
+
 ## Citation
 Project taken from: [XFeat](https://github.com/verlab/accelerated_features/tree/main)
 
