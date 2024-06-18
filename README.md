@@ -5,7 +5,6 @@
 Open Neural Network Exchange (ONNX) compatible implementation of [XFeat: Accelerated Features for Lightweight Image Matching](https://github.com/verlab/accelerated_features/tree/main). The ONNX model format allows for interoperability across different platforms with support for multiple execution providers, and removes Python-specific dependencies such as PyTorch.
 
 ## Table of Contents
-- [Introduction](#introduction)
 - [Installation](#installation)
 - [Usage](#usage)
   - [Inference](#inference)
@@ -13,8 +12,6 @@ Open Neural Network Exchange (ONNX) compatible implementation of [XFeat: Acceler
 - [Citation](#citation)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
-
-## Introduction
 
 ## Installation
 Pip install something.
@@ -28,6 +25,7 @@ As the ONNX Runtime has limited support for features like dynamic control flow, 
 
 ### Feature Extraction
 - Only batch size `1` is currently supported. This limitation stems from the fact that different images in the same batch can have varying numbers of keypoints, leading to non-uniform (a.k.a. *ragged*) tensors.
+For this reason the code differ from the original project: batch operations have been removed.
 
 ## Citation
 Project taken from: [XFeat](https://github.com/verlab/accelerated_features/tree/main)
