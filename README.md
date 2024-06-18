@@ -27,6 +27,9 @@ As the ONNX Runtime has limited support for features like dynamic control flow, 
 - Only batch size `1` is currently supported. This limitation stems from the fact that different images in the same batch can have varying numbers of keypoints, leading to non-uniform (a.k.a. *ragged*) tensors.
 For this reason the code differ from the original project: batch operations have been removed.
 
+### Multiscale
+- Actually Dense Multiscale model is not supported. Possible Future Work!
+
 ## Citation
 Project taken from: [XFeat](https://github.com/verlab/accelerated_features/tree/main)
 
