@@ -3,7 +3,7 @@
 [![ONNX](https://img.shields.io/badge/ONNX-grey)](https://onnx.ai/)
 ### [[ArXiv]](https://arxiv.org/abs/2404.19174) | [[Project Page]](https://www.verlab.dcc.ufmg.br/descriptors/xfeat_cvpr24/) |  [[CVPR'24 Paper]](https://cvpr.thecvf.com/)
 Open Neural Network Exchange (ONNX) compatible implementation of [XFeat: Accelerated Features for Lightweight Image Matching](https://github.com/verlab/accelerated_features/tree/main). The ONNX model format allows for interoperability across different platforms with support for multiple execution providers, and removes Python-specific dependencies such as PyTorch.
-Source code in C++ is also provided to test the model!.
+Source code in C++ is also provided to test the model!
 
 ## Table of Contents
 - [Installation](#installation)
@@ -32,7 +32,8 @@ For this reason the code differ from the original project: batch operations have
 - Actually Dense Multiscale model is not supported. Possible Future Work!
 
 ### Keypoints location
-- To compare the Pytorch/Onnx/C++ models, the images in the assets folder were used. It can be seen in the results that the Python Pytorch/ONNX results are very similar to each other. For the C++ part, the results may vary slightly, particularly with a noticeable upward sliding of points compared to the Python versions. However, when using the images without applying padding (image_800x608), the sliding does not occur. Could some scaling/rounding factor be getting lost somewhere?
+- ~~To compare the Pytorch/Onnx/C++ models, the images in the assets folder were used. It can be seen in the results that the Python Pytorch/ONNX results are very similar to each other. For the C++ part, the results may vary slightly, particularly with a noticeable upward sliding of points compared to the Python versions. However, when using the images without applying padding (image_800x608), the sliding does not occur. Could some scaling/rounding factor be getting lost somewhere?~~
+--> Pay attention to plot keypoints function float/int
 
 ## Citation
 Project taken from: [XFeat](https://github.com/verlab/accelerated_features/tree/main)
