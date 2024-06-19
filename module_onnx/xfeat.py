@@ -242,6 +242,7 @@ class XFeat(nn.Module):
         offsets = self.subpix_softmax2d(offsets.view(-1, 8, 8))
 
         mkpts_0 += offsets * (sc0[:, None])  # *0.9 #* (sc0[:,None])
+        mkpts_1 += offsets * (sc0[:, None])  # *0.9 #* (sc0[:,None])
 
         mask_good = conf > fine_conf
         mkpts_0 = mkpts_0[mask_good]
